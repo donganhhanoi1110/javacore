@@ -9,6 +9,22 @@ package java8;
  * have a default implementation of forEach method, and the class 
  * implementing these interfaces need not implement the same.
  * 
+ * ** When working with multiple inheritance
+ * 1. If we have 2 interfaces: Interface1 with default method() - Interface2 with just method() signature
+ * => If any class implements both above interfaces => method() becomes abstract method. We have to implement
+ * method() in the implementation class.
+ * 2. If we have 2 interfaces, both are having default method() with different implementation
+ * => If any class implements both above interfaces => so we have to implement method()
+ * 3. If we want to call the particular default emthod implementation
+ * => call like <InterfaceName>.super.<MethodName>()
+ * 4. If we have 2 interfaces, both are having same default method with different implementation 
+ * (Interface1 and Interface2). But one extends from other like Interface2 extends Interface1
+ * => Interface2 overrides method() from Interface1
+ * 5. What is the difference between abstract class and interface?
+ * Abstract class can have constructor, where you need an object to call the methods in subclass.
+ * But in case of default method without any reference you can invoke the interface method, like
+ * <InterfaceName>.super.<MethodName>()
+ * 
  * 
  * @author mnguyen74
  *
