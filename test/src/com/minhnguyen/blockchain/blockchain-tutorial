@@ -1,0 +1,10 @@
+-- Block Chain tutorial
+A blockchain is just a chain/list of blocks. Each block in the blockchain will have its own
+digital signature, contain digital signature of the previous block, and have some data
+(could be transaction for example)
+Block 1: {digital signature = 123, Data = "Hello Minh", Previous Hash = 0}
+Block 2: {digital signature = 234, Data = "Hello Ngan", Previous Hash = 123}
+p/s: Hash = Digital Signature
+
+-- Calculating and comparing the hashes allow us to see if a blockchain is invalid.
+=> CHanging any data in this list, will change the signature and break the chain.
