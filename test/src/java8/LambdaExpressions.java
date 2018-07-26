@@ -75,7 +75,6 @@ public class LambdaExpressions {
 				hello +
 				message );
 		g2.sayMessage("MINH");
-	
 	}
 
 	interface MathOperation {
