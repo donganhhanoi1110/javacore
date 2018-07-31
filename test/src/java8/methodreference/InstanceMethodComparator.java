@@ -1,4 +1,7 @@
 package java8.methodreference;
+
+import java8.Employee;
+
 /**
  * 
  * @author mnguyen74

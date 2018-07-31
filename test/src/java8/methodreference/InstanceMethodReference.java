@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import java8.Employee;
+
 public class InstanceMethodReference {
 	public static void main(String[] args) {
 		List<Employee> empList = new ArrayList<Employee>();
