@@ -47,7 +47,7 @@ public class LambdaExpressionWithComparator {
 	  list.forEach(System.out::println);
 	}
 	
-	/**
+   /**
    * Sort a list by using Lambda Expressions
    * @param List<Employee> list
    */
@@ -64,4 +64,5 @@ public class LambdaExpressionWithComparator {
     //Print List using Method References
     employeeList.forEach(System.out::println);
   }
+  
 }
