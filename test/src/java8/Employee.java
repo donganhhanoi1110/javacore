@@ -46,4 +46,8 @@ public class Employee {
     public void setSalary(Integer salary) {
         this.salary = salary;
     }
+    
+    public int compare(Employee e1) {
+     return e1.getSalary().compareTo(this.getSalary());
+    }
 }

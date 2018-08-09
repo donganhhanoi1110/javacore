@@ -2,6 +2,7 @@ package java8.methodreference;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class StaticMethodReference {
 	public static void main(String[] args) {
@@ -15,19 +16,20 @@ public class StaticMethodReference {
 			System.out.println(str);
 		}
 		
+		//In Anonymous Class way
+		System.out.println("-- Anonymous Class --");
+		list.forEach( new Consumer<String>() {
+			public void accept(String str) {
+				System.out.println(str);
+			}
+		});
+		
 		//In Method Reference way
 		System.out.println("-- Method Reference --");
-		list.forEach(StaticMethodReference::print);
+		list.forEach(MethodReference::print);
 		
 		//In Lambda Expression way
 		System.out.println("-- Lambda Expression --");
-		list.forEach((str) -> StaticMethodReference.print(str));
-	}
-	/**
-	 * This is statid method to be used in method reference and lambda expression
-	 * @param str
-	 */
-	public static void print(String str) {
-		System.out.println(str);
+		list.forEach((str) -> MethodReference.print(str));
 	}
 }
