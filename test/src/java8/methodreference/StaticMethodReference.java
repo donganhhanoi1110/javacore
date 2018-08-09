@@ -24,12 +24,14 @@ public class StaticMethodReference {
 			}
 		});
 		
+		//In Lambda Expression way
+		System.out.println("-- Lambda Expression --");
+		list.forEach((str) -> MethodReference.print(str));
+				
 		//In Method Reference way
 		System.out.println("-- Method Reference --");
 		list.forEach(MethodReference::print);
 		
-		//In Lambda Expression way
-		System.out.println("-- Lambda Expression --");
-		list.forEach((str) -> MethodReference.print(str));
+		
 	}
 }

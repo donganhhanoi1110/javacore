@@ -25,16 +25,16 @@ public class InstanceMethodReference {
 			}
 		});
 		empList.forEach(System.out::println);
+			
+		//sort in lambda expression
+		System.out.println("-- Lambda Expression --");
+		Collections.sort(empList, (e1, e2) -> instanceMethodCom.compare(e1, e2));
+		empList.forEach(System.out::println);
 				
 		//sort in Instance Method Reference
 		System.out.println("-- Instance Method Reference --");
 		Collections.sort(empList, instanceMethodCom::compare);
 		empList.forEach(System.out::println);
 		
-		//sort in lambda expression
-		System.out.println("-- Lambda Expression --");
-		Collections.sort(empList, (e1, e2) -> instanceMethodCom.compare(e1, e2));
-		empList.forEach(System.out::println);
-	
 	}
 }
