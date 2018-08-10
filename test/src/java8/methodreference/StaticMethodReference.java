@@ -34,8 +34,8 @@ public class StaticMethodReference {
 		System.out.println("-- Lambda Expression --");
 		list.forEach((str) -> MethodReference.print(str));
 				
-		//In Method Reference way
-		System.out.println("-- Method Reference --");
+		//In Static Method Reference way
+		System.out.println("-- Static Method Reference --");
 		list.forEach(MethodReference::print);
 		
 		

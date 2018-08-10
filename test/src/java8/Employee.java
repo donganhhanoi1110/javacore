@@ -49,6 +49,6 @@ public class Employee {
     }
     
     public int compare(Employee e1) {
-     return e1.getSalary().compareTo(this.getSalary());
+     return this.getSalary().compareTo(e1.getSalary());
     }
 }

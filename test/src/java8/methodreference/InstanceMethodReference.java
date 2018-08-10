@@ -18,7 +18,10 @@ public class InstanceMethodReference {
 		List<Employee> empList = new ArrayList<Employee>();
 		empList.add(new Employee("Minh Nguyen", "Accounts", 5000));
 		empList.add(new Employee("Ngan Pham", "Admin", 3000));
-		
+		for (Employee  e: empList) {
+			System.out.println(e.toString());
+		}
+		//Create new instance of InstanceMethodComparator
 		InstanceMethodComparator instanceMethodCom = new InstanceMethodComparator();
 		
 		//sort in Instance Method Reference
@@ -31,7 +34,7 @@ public class InstanceMethodReference {
 			}
 		});
 		empList.forEach(System.out::println);
-			
+		
 		//sort in lambda expression
 		System.out.println("-- Lambda Expression --");
 		Collections.sort(empList, (e1, e2) -> instanceMethodCom.compare(e1, e2));
