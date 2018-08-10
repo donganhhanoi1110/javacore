@@ -30,7 +30,8 @@ package java8;
  * a very simple yet powerful functional programming capability to JAVA.
  * 
  * @author Minh Nguyen
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class LambdaExpressions {
 	final static String hello = "Hello! ";

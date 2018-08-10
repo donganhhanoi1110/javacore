@@ -14,7 +14,8 @@ package java8.lambdaexpression;
  * a very simple yet powerful functional programming capability to JAVA.
  * 
  * @author Minh Nguyen
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class LambdaExpressionExp1 {
 

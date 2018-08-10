@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
+/**
+ * 
+ * @author Minh Nguyen
+ * @2018 https://java.hardibee.com @Copyright
+ *  
+ */
 public class StaticMethodReference {
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<String>();

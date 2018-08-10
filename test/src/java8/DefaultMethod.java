@@ -27,7 +27,8 @@ package java8;
  * 
  * 
  * @author mnguyen74
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class DefaultMethod {
 	public static void main(String[] args) {

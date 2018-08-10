@@ -16,7 +16,8 @@ import java.time.LocalDateTime;
  *  LocalDateTime class is immutable and thread-safe
  * 
  * @author Minh Nguyen
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class LocalDateTimeExample {
 

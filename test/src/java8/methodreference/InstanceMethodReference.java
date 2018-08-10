@@ -7,6 +7,12 @@ import java.util.List;
 
 import java8.Employee;
 
+/**
+ * 
+ * @author Minh Nguyen
+ * @2018 https://java.hardibee.com @Copyright
+ * 
+ */
 public class InstanceMethodReference {
 	public static void main(String[] args) {
 		List<Employee> empList = new ArrayList<Employee>();

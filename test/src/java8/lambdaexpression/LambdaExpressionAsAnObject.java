@@ -3,7 +3,8 @@ package java8.lambdaexpression;
 /**
  * 
  * @author Minh Nguyen
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class LambdaExpressionAsAnObject {
 	final static String HELLO = "Hello! ";

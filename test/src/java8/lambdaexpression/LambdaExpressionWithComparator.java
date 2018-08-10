@@ -10,7 +10,8 @@ import java8.Employee;
 /**
  * 
  * @author Minh Nguyen
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class LambdaExpressionWithComparator {
 

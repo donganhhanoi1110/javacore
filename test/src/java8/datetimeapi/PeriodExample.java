@@ -13,7 +13,8 @@ import java.util.stream.Stream;
  * A Period uses date based values (years, months, days).
  * 
  * @author Minh Nguyen
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class PeriodExample {
 

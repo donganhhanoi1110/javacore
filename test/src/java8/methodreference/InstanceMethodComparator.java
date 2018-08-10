@@ -4,8 +4,9 @@ import java8.Employee;
 
 /**
  * 
- * @author mnguyen74
- *
+ * @author Minh Nguyen
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class InstanceMethodComparator {
 	public int compare (Employee e1, Employee e2) {

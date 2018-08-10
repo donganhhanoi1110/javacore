@@ -7,7 +7,8 @@ import java.time.ZonedDateTime;
 
 /**
  * @author Minh Nguyen
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class LocalDateExample {
 

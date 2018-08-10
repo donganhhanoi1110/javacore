@@ -19,7 +19,8 @@ import java.time.ZonedDateTime;
  *  ZonedDateTime class is immutable and thread-safe
  * 
  * @author Minh Nguyen
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class ZonedDateTimeExample {
 

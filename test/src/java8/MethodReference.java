@@ -5,6 +5,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * 
+ * @author Minh Nguyen
+ * @2018 https://java.hardibee.com @Copyright
+ * 
+ */
 public class MethodReference {
 	
 	public static void main(String[] args) {

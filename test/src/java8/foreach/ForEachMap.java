@@ -11,7 +11,8 @@ import java.util.Map;
  * Collection classes which extends Iterable iterface can use forEach() loop to iterate elements.
  * 
  * @author Minh Nguyen
- *
+ * @2018 https://java.hardibee.com @Copyright
+ * 
  */
 public class ForEachMap {
 	public static void main(String[] args) {
