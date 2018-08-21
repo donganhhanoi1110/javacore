@@ -6,9 +6,9 @@ package java8.defaultmethods;
  * @2018 https://java.hardibee.com @Copyright
  *
  */
-public interface Interface2 {
+public interface Interface3 {
 	
-	default void hello() {
-		System.out.println("Hello from Interface2");
+	default void print() {
+		System.out.println("Message from Interface3");
 	}
 }
