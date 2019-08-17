@@ -39,7 +39,6 @@ public class StreamAPIExamples {
         Stream<Employee> stream3 = Stream.of(arrEmp);
         stream3.forEach(System.out::println);
 
-    }
         Stream<Employee> employeeStream = empList.stream();
         empList.add(new Employee("Khanh Pham", "IT", 4000));
         employeeStream.filter(e -> e.getSalary() > 3000)
