@@ -2,6 +2,7 @@ package com.protobuf;
 
 import com.protobuf.generated.AddressBookProtos.AddressBook;
 import com.protobuf.generated.AddressBookProtos.Person;
+import sun.jvm.hotspot.debugger.Address;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -52,6 +53,7 @@ class AddPerson {
             }
 
             person.addPhones(phoneNumber);
+
         }
 
         return person.build();
@@ -80,9 +82,26 @@ class AddPerson {
                 PromptForAddress(new BufferedReader(new InputStreamReader(System.in)),
                         System.out));
 
+        addressBook.addPeople(newPerson());
+
         // Write the new address book back to disk.
         FileOutputStream output = new FileOutputStream(args[0]);
         addressBook.build().writeTo(output);
         output.close();
+    }
+
+    static Person newPerson() {
+        Person.Builder p1 = Person.newBuilder();
+
+        p1.setEmail("donganhhanoi1110@gmail.com");
+        p1.setId(1);
+        p1.setName("Minh");
+        //Phone
+        Person.PhoneNumber.Builder phone = Person.PhoneNumber.newBuilder();
+        phone.setNumber("0399988263");
+        phone.setType(Person.PhoneType.HOME);
+        p1.addPhones(phone);
+
+        return p1.build();
     }
 }
