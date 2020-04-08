@@ -97,12 +97,52 @@ public class MaximumSumOfKConsecutiveElements {
     }
 
 
+    /**
+     * Time Complexity: O(N)
+     * Auxiliary Space Complexity: O(1)
+     * @param arr
+     * @param k
+     */
+    public static void printMaxInKElements(int[] arr, int k) {
+        int leftPoint = 0;
+        int rightPoint = k - 1;
+
+        int tempLeftIndex = 0;
+        int max = arr[rightPoint];
+        while (rightPoint < arr.length) {
+
+            if (arr[leftPoint] > max) {
+                max = arr[leftPoint];
+            }
+             leftPoint++;
+
+            //condition to go to next window is the leftPoint matches the rightPoint
+            //we will move all rightPoint to next index and leftPoint = tempLeftIndex + 1
+            if (leftPoint == rightPoint && rightPoint < arr.length) {
+                System.out.print(max + " ");
+                rightPoint++;
+                leftPoint = tempLeftIndex + 1;
+                //now keep the left index in the temp
+                tempLeftIndex++;
+
+                //reassign max
+                if (rightPoint < arr.length - 1)
+                    max = arr[rightPoint];
+
+            }
+        }
+    }
     public static void main (String[] args) {
         int arr[] = { 1, 4, 2, 10, 2, 3, 1, 0, 20 };
         int k = 4;
         int n = arr.length;
         System.out.println(maxSum1(arr, k));
         System.out.println(maxSum2(arr, k));
+
+
+        System.out.println();
+        printMaxInKElements(arr, 3);
+
     }
 
 
