@@ -1,0 +1,11 @@
+*.wsdl
+Target/*
+/.classpath
+/.factorypath
+/.project
+/bin/
+/.metadata/
+target/
+/.settings/
+/.idea/
+.scannerwork

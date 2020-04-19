@@ -1,0 +1,27 @@
+-- Java 8 Streams --
+First of all, please note that "Streams are not collections.". java.util.stream is introduced to process elements
+in sequence. Streams are wrappers for collections and arrays. They wrap an existing collection to
+support operations expressed with lambdas.so you specify what you want to do, not how to do it.
+Also don't get confused with InputStream, or OutputStreams.
+java.util.steam is part of functional programming.
+
+Streams differ from collections in several ways.
+** No storage: A stream is not a data structure that stores elements; instead, it conveys (
+chuyên chở, vận chuyển, truyền đạt, chuyển) elements from 
+a source such as a data structure, an array, a generator function or an I/O channel through a pipeline of computational
+operations.
+** Functional in nature(bản chất, bản tính): An operation on a stream produce a result, but does not modify it's source.
+For Ex: filtering a Stream obtained from a collection produces a new Stream with the filtered elements,
+rather than removing elements from the source collection.
+** Laziness-seeking: Many stream operations, such as filtering, mapping, or duplicate removal, 
+can be implemented lazily, exposing opportunities for optimization. 
+For example, "find the first String with three consecutive vowels" need not examine all 
+the input strings. Stream operations are divided into intermediate (Stream-producing) operations 
+and terminal (value- or side-effect-producing) operations. Intermediate operations are always lazy.
+**Possibly unbounded (vô tận, không giới hạn): While collections have 
+a finite (có chừng, hạn chế) size, streams need not. 
+Short-circuiting operations such as limit(n) or findFirst() can allow computations on 
+infinite streams to complete in finite time.
+** Consumable: The elements of a stream are only visited once during the life of a stream. 
+Like an Iterator, a new stream must be generated to revisit the same elements of the source.
+
