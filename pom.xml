@@ -14,7 +14,7 @@
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/src/libs/gson-2.6.2.jar.jar</systemPath>
+			<systemPath>${project.basedir}/src/libs/gson-2.6.2.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
